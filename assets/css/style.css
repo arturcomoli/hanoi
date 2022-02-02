@@ -1,0 +1,176 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../img/hanoitemple.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.popup-modal {
+    display: none;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000000;
+    background-color: #00000066;
+}
+
+.popup-modal p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup-modal button {
+    border: 2px solid #000;
+    margin: 0 5px;
+    height: 22px;
+    font-size: 14px;
+}
+
+.popup-modal button:hover {
+    background: #000;
+    color: #fff;
+}
+  
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #000;
+    width: 250px;
+}
+
+.hide {
+    display: none;
+}
+
+.tittle {
+    background-color: #0000003d;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+#count {
+    width: 100%;
+    background-color: #2f55a83f;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#towers {
+    background-color: #2f55a83f;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.tower {
+    width: 30%;
+    height: 200px;
+    background-image: url(../../img/hanoitower.png);
+    background-size: contain;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+}
+
+#disc1, #disc2, #disc3, #disc4, #disc5 {
+    height: 26px;
+}
+
+#disc1 {
+    background: #e02d0d;
+    width: 96%;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#disc2 {
+    background: #5353ff;
+    width: 80%;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#disc3 {
+    background: #d6c803;
+    width: 66%;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#disc4 {
+    background: #b0e0e6;
+    width: 52%;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#disc5 {
+    background: #dd891a;
+    width: 40%;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#disc5:focus {
+    border: 2px solid #0f12cf
+}
+
+section {
+    background-color: #0000003d;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+}
+
+button {
+    border: 2px solid #000;
+    background: #ffffffaa;
+    margin: 0 5px;
+    height: 22px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffffff;
+}
+
+@media screen and (min-width: 600px){
+    #count {
+        width: 600px;
+    }
+    
+    #towers {
+        width: 600px;
+    }
+    
+    .tower {
+        width: 150px;
+    }
+}
